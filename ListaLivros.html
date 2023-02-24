@@ -1,21 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> body{background-image:url(https://i.pinimg.com/564x/d1/73/72/d17372b9b1a7ba57cd0eaa9feddde448.jpg);}
-    h1{ color: blueviolet;}
-    .flex-livro {
-        display: flex;
-        flex-direction: row;
-        background-color: aliceblue;
-    }
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/564x/d1/73/72/d17372b9b1a7ba57cd0eaa9feddde448.jpg);
+        }
+
+        h1 {
+            color: rgb(94, 0, 182);
+            text-align: center;
+        }
+
+        h2 {
+            color: rgb(96, 30, 158);
+            text-align: center;
+        }
+
+        body {
+            margin: 25px;
+        }
+
+        div {
+            border: 3px solid #a748de;
+            padding: 5px;
+        }
+
+
+
+        .container {
+            position: relative;
+            width: 50%;
+            margin: 20px;
+        }
+
+        .image {
+            display: block;
+            width: 30%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #a748de;
+        }
+
+        .container:hover .overlay {
+            opacity: 2;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .galeria-livros{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
-<body> <h1>💜LISTA DE LIVROS FAVORITOS💜</h1>
-    <ul><li>"Christiane F. 13 anos, drogada e prostituida" É um livro maravilhoso que me deixou angustiada a leitura toda, é lindo ver que apesar da situação avançada a Christiane sempre teve esperança em sua reabilitação</li></ul>
-<img src="https://www.record.com.br/wp-content/uploads/2019/07/9788528604702-600x931.jpg" alt="" width="200">
+
+<body>
+    <h1>💜LISTA DE LIVROS FAVORITOS💜</h1>
+
+    <h2> Lista de livros favoritos e comentários sobre.</h2>
+
+    <div class="container">
+        <img src="https://www.record.com.br/wp-content/uploads/2019/07/9788528604702-600x931.jpg"
+                alt="Capa do livro" class="image">
+            <div class="overlay">
+                <div class="text">  É um livro maravilhoso que me deixou angustiada a leitura toda, é lindo ver que apesar
+                    da situação avançada a Christiane sempre teve esperança em sua reabilitação.</div>
+            </div>
+    </div>
+
+        <div class="container">
+            <img src="https://th.bing.com/th/id/R.1b15ac525cc920a9d99e60e86dde7af3?rik=s%2bbxkvhoA9jitQ&riu=http%3a%2f%2fcartacampinas.com.br%2fwp-content%2fuploads%2fa_menina_que_roubava_livros.jpg&ehk=BlWLazxbdI8AzLYCe2Nj7G3LOs6s%2bpR5evV1m%2b3Svn8%3d&risl=&pid=ImgRaw&r=0"
+                alt="Capa do livro" class="image">
+            <div class="overlay">
+                <div class="text">É todo narrado pela Morte, e inteiramente melancólico do início ao fim. Não esperava
+                    pelo final que teve, recomendo muito, é uma leitura linda.</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/R.e2be0a62672304288dcb208824e77c17?rik=pPHLXfwBvJTGkw&pid=ImgRaw&r=0"
+            alt="Capa do livro" class="image">
+        <div class="overlay">
+            <div class="text">A personagem principal é incrível, amei saber de sua história. Tanto pessoal tanto seu
+                romance, que apesar de tudo eu gostei muito. Há muitas discusões no livro.</div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/R.f9633d3510ea3149edd56e2df96124d9?rik=9hFcXp5U74R8aA&pid=ImgRaw&r=0"
+            alt="Capa do livro" class="image">
+        <div class="overlay">
+            <div class="text">Foi um dos que me abriu para a leitura. Ler esse livro é uma mistura de emoções, te deixa
+                tensa mas também te deixa muito feliz vendo a relação dos amigos entre si. </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <img src=" https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2021/06/064b75c-sobrevivendo-no-inferno-1331x2048.jpg "
+            alt="Capa do livro" class="image">
+        <div class="overlay">
+            <div class="text">Introdução muito boa, te faz prestar mais atenção nas letras do albúm. As letras são tão
+                pesadas e carregadas de discussões que você se esquece que é uma história real. </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="container">
+        <img src=" https://th.bing.com/th/id/OIP._UkqcntrSKsIGnpXXyopPQAAAA?pid=ImgDet&rs=1 " alt="Capa do livro"
+            class="image">
+        <div class="overlay">
+            <div class="text"> Uma história muito fofa, é muito linda mesmo. Adorei do início ao fim o BGA, é muito fofo
+                como ele quis ajudar e ir atrás. Recomendo muito, é uma leitura bem leve por ser infantil. </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
