@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/564x/d1/73/72/d17372b9b1a7ba57cd0eaa9feddde448.jpg);
+        }
+        h1{ color: rgb(94, 0, 182);
+            text-align: center;
+        }
+        h2{color: rgb(147, 38, 248);
+        text-align: center;
+        }
+        .container {
+  position: relative;
+  width: 50%;
+  margin: 10%;
+}
+
+.image {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7600ba;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+    <h1>💜Leituras em andamento💜</h1>
+    <h2>Livros que estou lendo atualmente, ou livros que comecei e pretendo terminar.</h2>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/R.decf8b11dbbea3a9b1619b2cd0b4494b?rik=GaCxis9rboXgYw&pid=ImgRaw&r=0" alt="capa livro" class="image">
+        <div class="overlay">
+        <div class="text">Leitura em andamento- atual</div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/R.73ab7fe1ed1f6c11e0ce429d21210e44?rik=QdVRd6HchUYgmw&pid=ImgRaw&r=0" alt="capa livro" class="image">
+        <div class="overlay">
+        <div class="text">Leitura em andamento- atual</div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://a-static.mlcdn.com.br/1500x1500/livro-o-gato-preto-e-outras-historias/livrariamartinsfontespaulista/918148/1996bbd7f0dc847cf968dd45035995db.jpg" alt="capa livro" class="image">
+        <div class="overlay">
+        <div class="text">Leitura em andamento- pausada</div>
+        </div>
+    </div>
+    <h1>🖤Abandonei🖤</h1>
+    <div class="container">
+        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1368233229l/17907344.jpg" alt="capa livro" class="image">
+        <div class="overlay">
+        <div class="text">Desisti de ler</div>
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://th.bing.com/th/id/OIP.S-uCBZWjCmi8PeBtBhov_AHaKr?pid=ImgDet&rs=1" alt="capa livro" class="image">
+        <div class="overlay">
+        <div class="text">Desisti de ler</div>
+        </div>
+    </div>
+</body>
+</html>
